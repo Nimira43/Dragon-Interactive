@@ -13,9 +13,15 @@ const Hero = () => {
               alt='NimiraTech Billy Bee' 
               width={400} 
               height={400} 
-              priority={true} />
+              priority={true} 
+            />
+            <span>Bzzz!!!</span>
+            <h1>We are NimiraTech</h1>
+            <p>We Love Coding 🖥️</p>
           </div>
+          <a href="#">Icon</a>
         </div>
+        <a href="#">Talk to Us</a>
       </div>
     </div>
   )
