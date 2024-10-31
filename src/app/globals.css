@@ -4,3 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-weight: 200;
+}
+
+.logo {
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #ff4500;
+}
+
