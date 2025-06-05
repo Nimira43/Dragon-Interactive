@@ -6,7 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
-import { useMotionValue } from 'framer-motion'
+import { useMotionValue, useTransform } from 'framer-motion'
 import { useState } from 'react'
 
 const heroIcons = [
@@ -39,6 +39,10 @@ const Hero = () => {
     })
     setMouseMove(true)
   }
+
+  const {innerWidth, innerHeight} = windowOffset
+  const rotateY = useTransform(x, [0, innerWidth], [-30, 30])
+  const rotateX = useTransform(y, [0, innerHeight], [10, -50])
 
   return (
     <div 
