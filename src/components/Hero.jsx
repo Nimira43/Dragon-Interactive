@@ -23,6 +23,7 @@ const Hero = () => {
     innerHeight: 0
   })
   const [mouseMove, setMouseMove] = useState(false)
+  const [buttonHover, setButtonHover] = useState(false)
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
