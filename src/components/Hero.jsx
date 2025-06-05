@@ -7,6 +7,7 @@ import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
 import { useMotionValue } from 'framer-motion'
+import { useState } from 'react'
 
 const heroIcons = [
   {icon: <RxDiscordLogo />, key: 'discord'},
@@ -17,6 +18,10 @@ const heroIcons = [
 ]
 
 const Hero = () => {
+  const [windowOffset, setWindowOffset] = useState({
+    innerWidth: 0,
+    innerHeight: 0
+  })
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
