@@ -49,8 +49,8 @@ const Hero = () => {
     stiffness: 100,
     damping: 10
   })
-  const rotateY = useTransform(x, [0, innerWidth], [-30, 30])
-  const rotateX = useTransform(y, [0, innerHeight], [10, -50])
+  const rotateY = useTransform(xSpring, [0, innerWidth], [-30, 30])
+  const rotateX = useTransform(ySpring, [0, innerHeight], [10, -50])
 
   return (
     <div 
