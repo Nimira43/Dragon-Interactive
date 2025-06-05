@@ -6,6 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
+import { GiCelebrationFire } from "react-icons/gi"
 import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
 import { useState } from 'react'
 
@@ -78,16 +79,16 @@ const Hero = () => {
               className='h-auto w-[150px]'
             />
             <motion.span 
-              className='absolute text-3xl font-semibold text-main'
+              className='absolute text-2xl font-semibold text-main'
               initial={{scale: 0}}
               animate={{
                 opacity: buttonHover ?  0 : 1,
                 scale: buttonHover ? 2 : 0,
                 y: buttonHover ? -40 : 0
               }}
-              
+              transition={{ opacity: {delay: 0.4} }}  
             >
-              1997
+              <GiCelebrationFire />
             </motion.span>
           </motion.div>
           <h1 className='text-center text-4xl font-medium tracking-wider logo'>Dragon Interactive</h1>
@@ -107,6 +108,8 @@ const Hero = () => {
         <a 
           href='#'
           className='mx-auto mt-7 block w-max px-3 py-1 border border-dark uppercase cursor-pointer hover:border-main hover:text-main transition-all'
+          onMouseEnter={() => setButtonHover(true)}
+          onMouseLeave={() => setButtonHover(false)}
         >
           Enter
         </a>
