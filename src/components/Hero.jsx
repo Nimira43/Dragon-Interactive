@@ -20,8 +20,17 @@ const Hero = () => {
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e
+    x.set(clientX)
+    y.set(clientY)
+  }
+
   return (
-    <div className='h-screen grid place-items-center'>
+    <div 
+      className='h-screen grid place-items-center' 
+      onMouseMove={handleMouseMove}
+    >
       <div>
         <div className='flex flex-col items-center justify-center gap-y-3 font-normal'>
           <div className='flex items-center justify-center'>
