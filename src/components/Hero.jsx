@@ -32,6 +32,13 @@ const Hero = () => {
     y.set(clientY)
   }
 
+  const handleMouseEnter = () => {
+    setWindowOffset({
+      innerWidth: window.innerWidth,
+      innerHeight: window.innerHeight
+    })
+  }
+
   return (
     <div 
       className='h-screen grid place-items-center' 
