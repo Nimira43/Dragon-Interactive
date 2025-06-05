@@ -6,7 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
-import { useMotionValue, useTransform, motion } from 'framer-motion'
+import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
 import { useState } from 'react'
 
 const heroIcons = [
