@@ -30,12 +30,18 @@ const Hero = () => {
               className='h-auto w-[150px]'
             />
           </div>
-          <h1 className='text-center text-3xl font-medium tracking-wider logo'>Dragon Interactive</h1>
-          <p className='text-sm logo '>Creating New Horizons</p>
+          <h1 className='text-center text-4xl font-medium tracking-wider logo'>Dragon Interactive</h1>
+          <p className='text-lg logo tracking-wider'>Creating New Horizons</p>
         </div>
-        <div>
+        <div className='mt-8 flex justify-center gap-x-10 text-3xl'>
           {heroIcons.map(( {icon, key} ) => (
-            <a href='#' key={key}>{icon}</a>
+            <a 
+              href='#' 
+              key={key}
+              className='hover:text-main transition-all'
+            >
+              {icon}
+            </a>
           ))}
         </div>
         <a 
