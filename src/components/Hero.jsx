@@ -6,6 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
+import { useMotionValue } from 'framer-motion'
 
 const heroIcons = [
   {icon: <RxDiscordLogo />, key: 'discord'},
@@ -16,6 +17,9 @@ const heroIcons = [
 ]
 
 const Hero = () => {
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
+
   return (
     <div className='h-screen grid place-items-center'>
       <div>
