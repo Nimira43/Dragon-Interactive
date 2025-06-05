@@ -1,6 +1,19 @@
 'use client'
 
 import Image from 'next/image'
+import { RxDiscordLogo } from "react-icons/rx"
+import { BiLogoTwitch } from "react-icons/bi"
+import { GiSpikedDragonHead } from 'react-icons/gi'
+import { AiOutlineYoutube } from "react-icons/ai"
+import { ImFacebook } from "react-icons/im"
+
+const heroIcons = [
+  {icon: <RxDiscordLogo />, key: 'discord'},
+  {icon: <BiLogoTwitch />, key: 'twitch'},
+  {icon: <GiSpikedDragonHead />, key: 'dragon'},
+  {icon: <AiOutlineYoutube />, key: 'youtube'},
+  {icon: <ImFacebook />, key: 'facebook'},
+]
 
 const Hero = () => {
   return (
@@ -16,13 +29,14 @@ const Hero = () => {
               priority={true}
               className='h-auto w-[150px]'
             />
-            {/* <span className='absolute text-3xl font-medium text-main'>1997</span> */}
           </div>
           <h1 className='text-center text-3xl font-medium tracking-wider logo'>Dragon Interactive</h1>
           <p className='text-sm logo '>Creating New Horizons</p>
         </div>
         <div>
-          <a href='#'>Icon</a>
+          {heroIcons.map(( {icon, key} ) => (
+            <a href='#' key={key}>{icon}</a>
+          ))}
         </div>
         <a 
           href='#'
