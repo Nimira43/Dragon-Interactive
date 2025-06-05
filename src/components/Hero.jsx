@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className='h-screen grid place-items-center'>
       <div>
-        <div>
+        <div className='flex flex-col items-center justify-center gap-y-3 font-normal'>
           <div>
             <Image 
               src='/images/dragon-1.png'
