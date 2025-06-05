@@ -87,7 +87,7 @@ const Hero = () => {
           href='#'
           className='mx-auto mt-7 block w-max px-3 py-1 border border-dark uppercase cursor-pointer hover:border-main hover:text-main transition-all'
         >
-          View Games
+          Enter
         </a>
       </div>
     </div>
