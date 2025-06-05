@@ -37,6 +37,7 @@ const Hero = () => {
       innerWidth: window.innerWidth,
       innerHeight: window.innerHeight
     })
+    setMouseMove(true)
   }
 
   return (
