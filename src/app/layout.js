@@ -7,8 +7,8 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Codice',
-  description: 'Portfolio website using Next JS and Tailwind',
+  title: 'Dragon Interactive',
+  description: 'Fictional game developer website using Next JS, Framer Motion and Tailwind',
 }
 
 export default function RootLayout({ children }) {
