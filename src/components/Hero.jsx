@@ -77,6 +77,18 @@ const Hero = () => {
               priority={true}
               className='h-auto w-[150px]'
             />
+            <motion.span 
+              className='absolute text-3xl font-semibold text-main'
+              initial={{scale: 0}}
+              animate={{
+                opacity: buttonHover ?  0 : 1,
+                scale: buttonHover ? 2 : 0,
+                y: buttonHover ? -40 : 0
+              }}
+              
+            >
+              1997
+            </motion.span>
           </motion.div>
           <h1 className='text-center text-4xl font-medium tracking-wider logo'>Dragon Interactive</h1>
           <p className='text-lg logo tracking-wider'>Creating New Horizons</p>
