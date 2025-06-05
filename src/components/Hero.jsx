@@ -41,6 +41,14 @@ const Hero = () => {
   }
 
   const {innerWidth, innerHeight} = windowOffset
+  const xSpring = useSpring(x, {
+    stiffness: 100,
+    damping: 10
+  })
+  const ySpring = useSpring(y, {
+    stiffness: 100,
+    damping: 10
+  })
   const rotateY = useTransform(x, [0, innerWidth], [-30, 30])
   const rotateX = useTransform(y, [0, innerHeight], [10, -50])
 
