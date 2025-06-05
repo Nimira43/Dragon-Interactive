@@ -17,14 +17,14 @@ module.exports = {
         'grey-light': '#ccc',
         'grey-medium': '#898989',
         'grey-dark': '#333',
-      }
+      },
     },
     screens: {
-      xl: {max: '1400px'},
-      lg: {max: '1150px'},
-      md: {max: '767px'},
-      sm: {max: '639px'},
-    }
+      xl: { max: '1400px' },
+      lg: { max: '1150px' },
+      md: { max: '767px' },
+      sm: { max: '639px' },
+    },
   },
   plugins: [],
 }

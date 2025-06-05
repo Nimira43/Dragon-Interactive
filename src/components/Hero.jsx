@@ -91,10 +91,10 @@ const Hero = () => {
               <GiCelebrationFire />
             </motion.span>
           </motion.div>
-          <h1 className='text-center text-4xl font-medium tracking-wider logo'>Dragon Interactive</h1>
+          <h1 className='text-center text-4xl font-medium tracking-wider logo sm:text-3xl'>Dragon Interactive</h1>
           <p className='text-lg logo tracking-wider'>Creating New Horizons</p>
         </div>
-        <div className='mt-8 flex justify-center gap-x-10 text-3xl'>
+        <div className='mt-8 flex justify-center gap-x-10 text-3xl sm:text-2xl'>
           {heroIcons.map(( {icon, key} ) => (
             <a 
               href='#' 
