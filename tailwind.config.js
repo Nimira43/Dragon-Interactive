@@ -7,7 +7,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'main': '#ff4500',
+        'support': '#87ceeb',
+        'light': '#fffcfa',
+        'dark': '#111',
+        'grey-light-extra': '#eee',
+        'grey-light': '#ccc',
+        'grey-medium': '#898989',
+        'grey-dark': '#333',
+      }
+    },
   },
   plugins: [],
 }
