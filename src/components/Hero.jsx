@@ -6,7 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
-import { useMotionValue, useTransform } from 'framer-motion'
+import { useMotionValue, useTransform, motion } from 'framer-motion'
 import { useState } from 'react'
 
 const heroIcons = [
@@ -52,7 +52,14 @@ const Hero = () => {
     >
       <div>
         <div className='flex flex-col items-center justify-center gap-y-3 font-normal'>
-          <div className='flex items-center justify-center'>
+          <motion.div 
+            className='flex items-center justify-center'
+            style={{
+              rotateX: mouseMove ? rotateX: 0,
+              rotateY: mouseMove ? rotateY: 0,
+              transition: '0.1s',  
+            }}
+          >
             <Image 
               src='/images/dragon-1.png'
               alt='Dragon image'
@@ -61,7 +68,7 @@ const Hero = () => {
               priority={true}
               className='h-auto w-[150px]'
             />
-          </div>
+          </motion.div>
           <h1 className='text-center text-4xl font-medium tracking-wider logo'>Dragon Interactive</h1>
           <p className='text-lg logo tracking-wider'>Creating New Horizons</p>
         </div>
