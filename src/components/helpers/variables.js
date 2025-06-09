@@ -33,26 +33,22 @@ export const heroIcons = [
 
 export const aboutAwards = [
   {
-    key: 'goty',
-    title: 'Game of the Year',
+    title: 'Game of the Year Awards',
     amount: '10',
     icon: <GiChampions />
   },
   {
-    key: 'bos',
-    title: 'Best Original Storyline',
+    title: 'Best Original Storyline Awards',
     amount: '11',
     icon: <GiBookAura />
   },
   {
-    key: 'bg',
-    title: 'Best Graphics',
+    title: 'Best Graphics Awards',
     amount: '8',
     icon: <GiBrightExplosion />
   },
   {
-    key: 'bs',
-    title: 'Best Soundtrack',
+    title: 'Best Soundtrack Awards',
     amount: '9',
     icon: <GiSoundOn />
   },

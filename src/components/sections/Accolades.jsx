@@ -17,12 +17,19 @@ const Accolades = ({ title, amount, children }) => {
   }
   
   return (
-    <div className='flex items-center gap-x-3'>
-      <span className='text-4xl lg:text-2xl'>Icons</span>
-      <h1 className='flex flex-col gap-y-2'>
-        <span className='text-2xl lg:text-xl'>10</span>
-        <span className='text-sm'>Game of the Year Awards</span>
-      </h1>     
+    <div className='flex items-center gap-x-3 '>
+      <span className='text-4xl lg:text-2xl hover:text-main transition-colors'>{children}</span>
+      <h1 className='flex flex-col gap-y-2 hover:text-main transition-colors'>
+        <motion.span 
+          className='text-2xl lg:text-xl text-center font-normal'
+          whileInView={() => count(amount)}
+          viewport={{ once: true}}
+        >
+          {number} 
+        </motion.span>
+        <span className='text-sm font-normal'>{title}</span>
+      </h1>
+           
     </div>
   )
 }
