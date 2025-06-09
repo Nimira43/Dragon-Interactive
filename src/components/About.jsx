@@ -1,9 +1,15 @@
 'use client'
 
+import Image from 'next/image'
+import Heading from './sections/Heading'
+
 const About = () => {
   return (
     <div>
-      <h1>About</h1>
+      <Heading />
+      <div>
+        <Image />
+      </div>
     </div>
   )
 }
