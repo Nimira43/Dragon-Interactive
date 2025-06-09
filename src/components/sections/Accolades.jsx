@@ -1,3 +1,5 @@
+import { motion, useMotionValue } from 'framer-motion'
+
 const Accolades = () => {
   return (
     <div className='flex items-center gap-x-3'>
