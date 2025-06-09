@@ -1,7 +1,11 @@
 const Accolades = () => {
   return (
     <div>
-      <h1>Accolades</h1>      
+      <span>Icon</span>
+      <h1>
+        <span>10</span>
+        <span>Game of the Year Awards</span>
+      </h1>     
     </div>
   )
 }

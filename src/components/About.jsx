@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Heading from './sections/Heading'
+import Accolades from './sections/Accolades'
 
 const About = () => {
   return (
@@ -23,7 +24,9 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div>Accolades</div>
+      <div>
+        <Accolades />
+      </div>
     </div>
   )
 }
