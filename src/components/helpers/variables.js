@@ -3,10 +3,10 @@ import { BiLogoTwitch } from 'react-icons/bi'
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from 'react-icons/ai'
 import { ImFacebook } from 'react-icons/im'
-import { GiChampions } from "react-icons/gi"
-import { GiBookAura } from "react-icons/gi"
-import { GiBrightExplosion } from "react-icons/gi"
-import { GiSoundOn } from "react-icons/gi"
+import { GiChampions } from 'react-icons/gi'
+import { GiBookAura } from 'react-icons/gi'
+import { GiBrightExplosion } from 'react-icons/gi'
+import { GiSoundOn } from 'react-icons/gi'
 
 export const heroIcons = [
   { 

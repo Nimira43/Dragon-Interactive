@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import Heading from './sections/Heading'
 import Accolades from './sections/Accolades'
+import { aboutAwards } from './helpers/variables'
+import { IoDownloadOutline } from 'react-icons/io5'
+import { IoMdArrowDropleft } from 'react-icons/io'
 
 const About = () => {
   return (
