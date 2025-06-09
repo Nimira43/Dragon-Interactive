@@ -6,7 +6,7 @@ import Accolades from './sections/Accolades'
 
 const About = () => {
   return (
-    <div>
+    <div className='min-h-screen px-96 flex flex-col items-center justify-center'>
       <Heading />
       <div>
         <Image
