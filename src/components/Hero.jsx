@@ -6,7 +6,7 @@ import { BiLogoTwitch } from "react-icons/bi"
 import { GiSpikedDragonHead } from 'react-icons/gi'
 import { AiOutlineYoutube } from "react-icons/ai"
 import { ImFacebook } from "react-icons/im"
-import { GiCelebrationFire } from "react-icons/gi"
+import { SiFireship } from "react-icons/si"
 import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
 import { useState } from 'react'
 
@@ -88,7 +88,7 @@ const Hero = () => {
               }}
               transition={{ opacity: {delay: 0.4} }}  
             >
-              <GiCelebrationFire />
+              <SiFireship />
             </motion.span>
           </motion.div>
           <h1 className='text-center text-4xl font-medium tracking-wider logo sm:text-3xl'>Dragon Interactive</h1>
