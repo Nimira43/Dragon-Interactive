@@ -1,8 +1,10 @@
 'use client'
 
-const Heading = () => {
+const Heading = ({ text }) => {
   return (
-    <h1>About Us</h1>
+    <h1 className='text-3xl sm:text-2xl mb-14 self-start logo'>
+      { text }
+    </h1>
   )
 }
 

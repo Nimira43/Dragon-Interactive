@@ -7,7 +7,7 @@ import Accolades from './sections/Accolades'
 const About = () => {
   return (
     <div className='min-h-screen px-96 flex flex-col items-center justify-center'>
-      <Heading />
+      <Heading text={'About Us'}/>
       <div>
         <Image
           src={'/images/about.png'}
