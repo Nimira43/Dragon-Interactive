@@ -71,7 +71,7 @@ const Hero = () => {
             }}
           >
             <Image 
-              src='/images/dragon-1.png'
+              src='/images/dragon.png'
               alt='Dragon image'
               width={400}
               height={400}

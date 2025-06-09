@@ -8,7 +8,12 @@ const About = () => {
     <div>
       <Heading />
       <div>
-        <Image />
+        <Image
+          src={'/images/about.png'}
+          alt='About Image'
+          width={400}
+          height={400}
+        />
       </div>
     </div>
   )
