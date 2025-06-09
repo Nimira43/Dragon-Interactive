@@ -23,6 +23,7 @@ const About = () => {
           </a>
         </div>
       </div>
+      <div>Accolades</div>
     </div>
   )
 }
