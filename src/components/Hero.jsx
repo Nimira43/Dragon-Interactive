@@ -1,22 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import { RxDiscordLogo } from 'react-icons/rx'
-import { BiLogoTwitch } from 'react-icons/bi'
-import { GiSpikedDragonHead } from 'react-icons/gi'
-import { AiOutlineYoutube } from 'react-icons/ai'
-import { ImFacebook } from 'react-icons/im'
+import { heroIcons } from './helpers/variables'
 import { SiFireship } from 'react-icons/si'
 import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
 import { useState } from 'react'
-
-const heroIcons = [
-  {icon: <RxDiscordLogo />, key: 'discord'},
-  {icon: <BiLogoTwitch />, key: 'twitch'},
-  {icon: <GiSpikedDragonHead />, key: 'dragon'},
-  {icon: <AiOutlineYoutube />, key: 'youtube'},
-  {icon: <ImFacebook />, key: 'facebook'},
-]
 
 const Hero = () => {
   const [windowOffset, setWindowOffset] = useState({
