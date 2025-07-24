@@ -5,7 +5,7 @@ import Heading from './sections/Heading'
 
 const TimeLine = () => {
   return (
-    <div className='py-20 px-96 relative'>
+    <div className='py-20 relative'>
       <Image 
           src={'/images/timeline.png'}
           alt={'Timeline Dragon Image'}
